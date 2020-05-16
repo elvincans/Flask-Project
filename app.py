@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
-
-@author: etill
-"""
+#################
+# Elvin Canseco
+# ec3456
+# Final
+#
+#################
 
 #import statements
 from flask import Flask, render_template
@@ -16,10 +16,12 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
-@app.route("/assignments")
+#static route
+@app.route("/interests")
 def assgns():
     return render_template('assignments.html')
 
+#static route
 @app.route("/classes")
 def clss():
     return render_template('classes.html')
